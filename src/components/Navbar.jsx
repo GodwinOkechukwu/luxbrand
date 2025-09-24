@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +51,7 @@ export default function Navbar() {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-white focus:outline-none">
-          {isOpen ? "✖" : "☰"}
+          {isOpen ? "✖" : <GiHamburgerMenu />}
         </button>
       </div>
 
